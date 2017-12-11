@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="663.0" prefWidth="1088.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainActivityController">
+    <HBox alignment="CENTER" prefHeight="663.0" prefWidth="1081.0" spacing="50.0">
+        <VBox alignment="CENTER" prefHeight="663.0" prefWidth="228.0" spacing="50.0" styleClass="vbox1">
+            <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="473.0" prefWidth="208.0" spacing="15" styleClass="vbox1">
+                <Label prefHeight="45.0" prefWidth="228.0" styleClass="lbB" text="YOU" />
+                <Label fx:id="lbmyCapital" prefHeight="38.0" prefWidth="243.0" styleClass="lbB" text="Money : 100$" />
+                <HBox prefHeight="100.0" prefWidth="210.0">
+                    <Label prefHeight="50.0" prefWidth="59.0" styleClass="lbSP" text="BET : " />
+                    <Spinner fx:id="spinner" amountToStepBy="10" max="100" min="10" onMouseClicked="#spinnerClick" prefHeight="40.0" prefWidth="167.0">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin></Spinner>
+                </HBox>
+            </VBox>
+            <VBox prefHeight="537.0" prefWidth="228.0" spacing="15" styleClass="vbox2">
+                <Label prefHeight="46.0" prefWidth="234.0" styleClass="lbM" text="COMPUTER" />
+                <Label fx:id="lbcomputerCapital" prefHeight="45.0" prefWidth="201.0" styleClass="lbM" text="Money : 100$" />
+                <HBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10">
+                    <children>
+                        <Button fx:id="btnDivide" onAction="#divideClick" prefHeight="60.0" prefWidth="100.0" text="Div" />
+                        <Button fx:id="btnResult" onAction="#playClick" prefHeight="60.0" prefWidth="100.0" text="Play" disable="true" />
+                        <Button fx:id="btnRule" onAction="#inforClick" prefHeight="60.0" prefWidth="100.0" text="Rule" />
+                    </children>
+                </HBox>
+            </VBox>
+
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="663.0" prefWidth="727.0" styleClass="vbox2" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <HBox alignment="CENTER" prefHeight="340.0" prefWidth="727.0" spacing="20" styleClass="hbox1">
+                <ImageView fx:id="imgH1">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgH2">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgH3">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="346.0" prefWidth="727.0" spacing="20" styleClass="hbox2">
+                <ImageView fx:id="imgH4">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgH5">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgH6">
+                    <image>
+                        <Image url="@src/img/back.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </VBox>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
